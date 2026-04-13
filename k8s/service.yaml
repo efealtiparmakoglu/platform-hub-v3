@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: platform-hub-v3-service
+spec:
+  selector:
+    app: platform-hub-v3
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
